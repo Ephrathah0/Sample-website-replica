@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title> JavaScript in Head Tag </title> 
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "thank you"; 
+  }
+  function highlightInput(elm){
+            elm.style.background = "darkred";
+        }  
+
+</script>
+
+</head> 
+
+<body>
+
+
+ 
+
+
+<table  width="100%">
+<tr>
+<td width="10%">
+<td width="30%">
+
+<h2>Sign in</h2>
+<p id="demo">Sign in and get full access to our resoures</p>
+
+<form>
+<label for="username"><b>username</b></label>
+<input type="text" id="username" placeholder="email" required="required" pattern="[a-z0-9._%+-]+@[gmail email]+.com">
+</form>
+
+<form action="/action_page.php">
+<label for="pwd"><b>password</b></label>
+<input type="text" id="pwd" placeholder="password" required="required" minlength="6" maxlength="32">
+</form>
+<form action="/action_page.php">
+
+<input type="submit" value="signIn" >
+</form>
+</td>
+
+<td width="5%">
+</td>
+
+
+
+
+<script>
+
+        function highlightInput(elm){
+
+            elm.style.background = "darkred";
+
+        }    
+</script>
+<td width="50%">
+<h2 id="register">Register</h2>
+
+<form action="/action_page.php">
+<label for="fullname" >fullname</label><br>
+<input type="text" id="fullname" name="fullname" onfocus="highlightInput(this)">
+</form>
+
+
+<form action="/action_page.php">
+<label for="phone">phone</label><br>
+<input type="text" id="phone" name="phone" pattern= "[+251]{9}[0-9]{9} placeholder="+251 9_ _ _ _ _ _ _ _ " >
+</form>
+
+<form action="/action_page.php">
+<label for="age">age</label><br>
+<input type="number" id="age" name="age" min="18" max="30" required="required">
+</form>
+
+<form action="/action_page.php">
+<label for="color">color</label><br>
+<input type="color" id="favcolor" name="favcolor" >
+</form>
+
+<form action="/action_page.php">
+<label for="birthday">birthday</label><br>
+<input type="date" id="age" name="date" >
+
+</form>
+<form action="/action_page.php">
+<label for="gender">gender</label><br>
+<input type="radio" value="male" name="male" >male
+<input type="radio" value="female" name="female" >female
+</form>
+
+<form action="/action_page.php">
+<label for="pwd">password</label><br>
+<input type="text" id="password" name="password" >
+</form>
+
+<form action="/action_page.php">
+<label for="pwd">confirm password</label><br>
+<input type="text" id="password" name="password" >
+</form>
+
+<form action="/action_page.php">
+<label for="country" id="country"></label>
+<select name="country" id="country">
+<option value="Ethiopia">Ethiopia</option>
+<option value="USA">USA</option>
+<option value="Italy">Italy</option>
+</select>
+</form>
+
+<form action="/action_page.php">
+<label for="message">describe yourself</label><br>
+<textarea name="describe yourself" width="500%" height="700">
+</textarea>
+
+
+<input type="submit" value="submit" >
+<input type="reset" value="reset" >
+
+</form>
+</td>
+</tr>
+</table>
+<br><br><hr>
+
+<table width="100%">
+
+
+<tr>
+<td width="20%"></td>
+
+<td width="80%"><video controls source src="video\24_HOURS.mp4" id="myVideo" width="300" height="300"   ></video></td>
+
+</tr>
+</table><script> 
+var vid = document.getElementById("myVideo"); 
+  function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script>
+
+
+<button type="button" onclick="alert('Welcome');"> Click Me </button>
+
+   
+</body>
+</html>  
